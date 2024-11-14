@@ -18,6 +18,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   max-width: 100%;
+  overflow-x: hidden ;
   /* padding: 3rem;
   margin: 3rem; */
 }
@@ -50,25 +51,26 @@ body {
 
 .navbar ul li a.large {
   font-size: 2rem;
-}
+} 
+
+/* .large ul li a{
+  font-size: 2rem;
+} */
 
 .navbar ul li a:hover {
   color: black;
 }
 
 button {
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 1rem;
   border-radius: 20px 20px 20px 20px;
   background-color: var(--Cyan);
-  color: black;
+  color: white;
   border: none;
   font-weight: bold;
 }
 
-button:hover {
-  color: white;
-}
 
 .container {
   display: flex;
@@ -89,8 +91,8 @@ button:hover {
 }
 
 .secondbutton {
-  font-size: 1.5rem;
-  padding: 15px;
+  font-size: 1.2rem;
+  padding: 15px 30px;
   border-radius: 40px 40px 40px 40px;
 }
 
@@ -207,6 +209,7 @@ p {
   color: white;
   padding: 10px;
   justify-content: flex-start;
+  background-size: cover;
 }
 
 .item {
@@ -336,8 +339,6 @@ p {
   margin-top: 25px;
 } */
 
-
-
 .before-footer {
   display: flex;
   justify-content: center;
@@ -385,8 +386,6 @@ p {
   border-radius: 50%; /* Makes the image circular */
 }
 
-
-
 .connector {
   width: 40px; /* Width of connector */
   height: 5px; /* Thickness of connector */
@@ -411,7 +410,7 @@ p {
   color: var(--Gray);
 }
 
-.box1 h4{
+.box1 h4 {
   margin-top: 40px;
   color: black;
 }
@@ -424,7 +423,7 @@ p {
   color: var(--Gray);
 }
 
-.box2 h4{
+.box2 h4 {
   margin-top: 40px;
   color: black;
 }
@@ -437,7 +436,89 @@ p {
   color: var(--Gray);
 }
 
-.box3 h4{
+.box3 h4 {
   margin-top: 40px;
   color: black;
+}
+
+@media (max-width: 600px) {
+  .large {
+    flex-direction: column; /* Stack logo and hamburger vertically */
+    justify-content: center;
+    padding: 15px;
+  }
+  .navbar ul {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    flex-direction: column-reverse;
+    height: auto; 
+    margin: 0; 
+    /* padding: 0px;  */
+  }
+
+  .right img{
+    width: 100%; 
+    height: auto; 
+    display: block;
+  }
+  .left{
+    width: 100%; 
+    height: auto; 
+    display: block;
+
+  }
+  .Adjust{
+    margin-top: 90px;
+    
+    width: 100%; 
+    height: auto; 
+    display: block;
+  }
+
+  /* .box{
+    justify-content: center;
+    height: auto; 
+    display: block;
+  } */
+
+ .footer{
+  height: auto;
+  flex-direction: column;
+  display: block;
+ }
+ .icon{
+   align-items: center;
+   margin-top: 10px;
+   margin-left: 70px;
+ } 
+
+
+  .connector{
+    display: inline;
+    flex-direction: column-reverse;
+    height: 40px;
+    width: 5px;
+    margin-top: -0;
+    margin-bottom: px;
+  }
+
+  .box{
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 100%;
+    
+  }
+  .box2{
+    margin-top: -40px;
+  }
+  .connector2{
+    margin-top: 50px;
+  }
+  .box3{
+    margin-top: -90px;
+  }
 }
