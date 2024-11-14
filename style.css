@@ -1,0 +1,443 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Cyan: hsl(180, 66%, 49%);
+  --DarkViolet: hsl(257, 27%, 26%);
+  --Red: hsl(0, 87%, 67%);
+  --Gray: hsl(0, 0%, 75%);
+  --GrayishViolet: hsl(257, 7%, 63%);
+  --VeryDarkBlue: hsl(255, 11%, 22%);
+  --VeryDarkViolet: hsl(260, 8%, 14%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  max-width: 100%;
+  /* padding: 3rem;
+  margin: 3rem; */
+}
+.main-container {
+  /* margin-top: 20px; */
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+  margin-right: 3rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--Gray);
+  font-size: 1rem;
+}
+
+.navbar ul li a.large {
+  font-size: 2rem;
+}
+
+.navbar ul li a:hover {
+  color: black;
+}
+
+button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 20px 20px 20px 20px;
+  background-color: var(--Cyan);
+  color: black;
+  border: none;
+  font-weight: bold;
+}
+
+button:hover {
+  color: white;
+}
+
+.container {
+  display: flex;
+  margin-top: 50px;
+  padding: 3%;
+  gap: 50px;
+}
+.left {
+  width: 50%;
+  font-size: 2rem;
+  color: black;
+}
+.left p {
+  font-size: 1.5rem;
+  padding-top: 10px;
+  color: var(--GrayishViolet);
+  padding-bottom: 20px;
+}
+
+.secondbutton {
+  font-size: 1.5rem;
+  padding: 15px;
+  border-radius: 40px 40px 40px 40px;
+}
+
+.right img {
+  flex-shrink: 0; /* Prevents image from resizing to fit */
+  margin-right: -50px; /* Adjust this to control how much of the image goes out */
+  transform: translateX(50px);
+}
+
+.background-div {
+  padding: 20px;
+  background-image: url(./Assets/images/bg-shorten-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  display: flex;
+  background-color: black;
+  gap: 20px;
+}
+
+.text-box {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  font-size: 16px;
+  padding-right: 10%;
+}
+
+.submit-button {
+  background-color: var(--Cyan);
+  /* color: black; */
+  width: 15%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.submit-button:hover {
+  color: white;
+}
+
+/* .error-msg {
+    color: red;
+    font-size: 14px;
+    display: none; 
+    margin-top: 10px;
+}
+
+
+.text-box:invalid:focus + .submit-button + .error-msg {
+    display: block;
+}
+
+
+.text-box:focus:invalid {
+    border-color: red;
+}
+
+
+.text-box:valid:focus + .submit-button + .error-msg {
+    display: block;
+} */
+
+.text {
+  margin-top: 50px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: lightblue;  */
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.Adjust h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.Adjust p {
+  font-size: 1rem;
+  color: var(--GrayishViolet);
+  font-weight: lighter;
+}
+
+.Adjust {
+  width: 40%;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: var(--VeryDarkBlue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  justify-content: flex-start;
+}
+
+.item {
+  width: 10%; /* Adjust width as needed */
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 0.8rem;
+  margin-left: 100px;
+}
+
+.item h3 {
+  padding-bottom: 20px;
+}
+
+.item ul {
+  margin-top: 5px;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+  color: white;
+}
+
+.item ul a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  line-height: 1.5rem;
+}
+
+.shortly {
+  width: 20%; /* Adjust width as needed */
+  text-align: center;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+.f1 {
+  margin-top: 150px;
+  width: 100%;
+  height: 200px;
+  background-image: url(./Assets/images/bg-boost-desktop.svg);
+  background-color: var(--VeryDarkBlue);
+  display: flex;
+  flex-direction: column; /* Content will now stack vertically */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  line-height: 5rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.icon {
+  display: flex;
+  gap: 10px;
+  display: flex;
+  margin-left: 200px;
+  margin-bottom: 100px;
+}
+
+/* .middle {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.box1,
+.box3,
+.box5 {
+  width: 21%;
+  height: 190px;
+  border: 1px solid black;
+}
+
+.box2,
+.box4 {
+  width: 3%;
+
+  background-color: var(--Cyan);
+  align-self: center;
+}
+
+.box {
+  padding: 10px;
+  text-align: left;
+  color: white;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+.box1 {
+  margin-top: -30px;
+  color: black;
+}
+
+.box1 h3 {
+  padding-top: 80px;
+}
+
+.box1 p {
+  margin-top: 2px;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  font-weight: lighter;
+  color: var(--Gray);
+}
+
+.box3 {
+  margin-top: -10px;
+}
+
+.box2 {
+  margin-top: -50px;
+}
+
+.box4 {
+  margin-top: -30px;
+}
+
+.box5 {
+  margin-bottom: -20px;
+  margin-top: 25px;
+} */
+
+
+
+.before-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.box-row {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adjust the space between boxes and connectors */
+}
+
+.box {
+  position: relative;
+  width: 250px; /* Width of each box */
+  height: 210px; /* Height of each box */
+  background-color: white;
+  color: white;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 30px; /* Space for the image */
+  border-radius: 5px;
+  border: 1px solid rgb(244, 235, 235);
+}
+
+.circle-img {
+  position: absolute;
+  top: -15px; /* Adjust vertical position */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px; /* Size of the circular container */
+  height: 70px; /* Maintain circular shape */
+  border-radius: 50%; /* Makes the container circular */
+  border: 3px solid white; /* Optional border for a clean look */
+  background-color: var(--VeryDarkBlue); /* Background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-img img {
+  width: 20px; /* Size of the image inside the circle */
+  height: 20px; /* Keep it proportional */
+  border-radius: 50%; /* Makes the image circular */
+}
+
+
+
+.connector {
+  width: 40px; /* Width of connector */
+  height: 5px; /* Thickness of connector */
+  background-color: var(--Cyan); /* Connector color */
+  border-radius: 5px;
+  margin-top: 115px;
+}
+
+.box2 {
+  transform: translateY(25%); /* 25% down compared to the first box */
+}
+
+.box3 {
+  transform: translateY(50%); /* 25% further down compared to the second box */
+}
+
+.box1 p {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  font-weight: lighter;
+  color: var(--Gray);
+}
+
+.box1 h4{
+  margin-top: 40px;
+  color: black;
+}
+
+.box2 p {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  font-weight: lighter;
+  color: var(--Gray);
+}
+
+.box2 h4{
+  margin-top: 40px;
+  color: black;
+}
+
+.box3 p {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  font-weight: lighter;
+  color: var(--Gray);
+}
+
+.box3 h4{
+  margin-top: 40px;
+  color: black;
+}
